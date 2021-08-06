@@ -203,8 +203,6 @@ public class FileProvider extends ContentProvider {
                     target = context.getFilesDir();
                 } else if (TAG_CACHE_PATH.equals(tag)) {
                     target = context.getCacheDir();
-                } else if (TAG_EXTERNAL.equals(tag)) {
-                    target = Environment.getExternalStorageDirectory();
                 } else if (TAG_EXTERNAL_FILES.equals(tag)) {
                     File[] externalFilesDirs = getExternalFilesDirs(context, null);
                     if (externalFilesDirs.length > 0) {
